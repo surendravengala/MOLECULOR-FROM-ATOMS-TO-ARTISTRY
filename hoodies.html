@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoodies Collection - Moleculor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+ <!-- Top Bar -->
+ <div class="top-bar">
+    <div class="slider-container">
+        <div class="slider-text">Welcome to Moleculor</div>
+        <div class="slider-text">Get up to 50% off on premium products</div>
+        <div class="slider-text">Get free delivery on first 3 orders</div>
+    </div>
+</div>
+
+<!-- Header Section -->
+<header class="sticky-header">
+    <div class="header-left">
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="logo">
+            <a href="index.html" ><img src="mol_logo.jpeg" alt="Moleculor Logo"></a>
+        </div>
+    </div>
+
+    <div class="header-right">
+        <div class="search-container">
+            <input type="text" placeholder="Search products...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="header-icons">
+            <div class="icon-container">
+                <a href="login.html"><i class="fas fa-user"></i></a>
+            </div>
+            <div class="icon-container">
+                <i class="fas fa-heart"></i>
+                <span class="notification-badge wishlist-count">0</span>
+            </div>
+            <div class="icon-container">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="notification-badge cart-count">0</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Sidebar Menu -->
+<nav class="sidebar" id="sidebar">
+    <button class="close-sidebar">×</button>
+    <div class="sidebar-content">
+        <div class="menu-item">
+            <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+        </div>
+        <div class="menu-item">
+            <a href="new-drops.html">New Arrivals</a>
+        </div>
+        <div class="menu-item">
+            <a href="deals.html">Deals of the Day</a>
+        </div>
+        <div class="menu-item">
+            <a href="orders.html" >My Orders</a>
+        </div>
+        <div class="menu-item">
+            <a href="https://maps.app.goo.gl/Qp2wMaGf9QhUiznz7">Find a Store</a>
+        </div>
+        <div class="menu-item has-submenu">
+            <a>Shop</a>
+            <div class="submenu">
+                <div class="submenu-section">
+                    <h4>Top Wear</h4>
+                    <a href="hoodies.html">Hoodies</a>
+                    <a href="tshirts.html">T-Shirts</a>
+                    <a href="casual-shirts.html">Shirts</a>
+                    <a href="sweatshirts.html">Sweatshirts</a>
+                </div>
+                <div class="submenu-section">
+                    <h4>Bottom Wear</h4>
+                    <a href="trousers.html">Trousers</a>
+                    <a href="jeans.html">Jeans</a>
+                    <a href="shorts.html">Shorts</a>
+                </div>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</nav>
+
+
+
+
+    <!-- Main Content -->
+    <main>
+        <h1 class="section-title">Hoodies Collection</h1>
+        <div class="products-grid">
+            <!-- Hoodie 1 -->
+            <div class="product-card" data-id="17">
+                <div class="product-image">
+                    <img src="https://img.freepik.com/free-photo/attractive-young-caucasian-male-student-gray-hoodie-jeans-puffing-out-his-cheeks-like-he-is-tired-running-as-he-is-late-classes_176420-13437.jpg?t=st=1735927605~exp=1735931205~hmac=bcf1b1f5096bd5e11705e2c525f83b94bcc3d624c862c5cc5963cd7f9f8995db&w=900" alt="Basic Hoodie">
+                    <button class="wishlist-btn" onclick="toggleWishlist(17)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3>Basic Cotton Hoodie</h3>
+                <p>$59.99</p>
+                <div class="sizes">
+                    <button class="size-btn">S</button>
+                    <button class="size-btn">M</button>
+                    <button class="size-btn">L</button>
+                    <button class="size-btn">XL</button>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart(17)">Add to Cart</button>
+            </div>
+
+            <!-- Hoodie 2 -->
+            <div class="product-card" data-id="18">
+                <div class="product-image">
+                    <img src="https://img.freepik.com/premium-photo/young-man-christmas-kigurumi-knitted-hat-colored-background_8544-4105.jpg?ga=GA1.1.1862102380.1729219632&semt=ais_hybrid" alt="Zip Hoodie">
+                    <button class="wishlist-btn" onclick="toggleWishlist(18)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3>Full-Zip Hoodie</h3>
+                <p>$54.99</p>
+                <div class="sizes">
+                    <button class="size-btn">S</button>
+                    <button class="size-btn">M</button>
+                    <button class="size-btn">L</button>
+                    <button class="size-btn">XL</button>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart(18)">Add to Cart</button>
+            </div>
+
+            <!-- Hoodie 3 -->
+            <div class="product-card" data-id="19">
+                <div class="product-image">
+                    <img src="https://img.freepik.com/premium-photo/portrait-woman-standing-against-wall_1048944-22882399.jpg?ga=GA1.1.1862102380.1729219632&semt=ais_hybrid" alt="Oversized Hoodie">
+                    <button class="wishlist-btn" onclick="toggleWishlist(19)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3>Oversized Comfort Hoodie</h3>
+                <p>$49.99</p>
+                <div class="sizes">
+                    <button class="size-btn">S</button>
+                    <button class="size-btn">M</button>
+                    <button class="size-btn">L</button>
+                    <button class="size-btn">XL</button>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart(19)">Add to Cart</button>
+            </div>
+
+            <!-- Hoodie 4 -->
+            <div class="product-card" data-id="20">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1530475329205-1c5333ae40fb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHByZW1pdW0lMjBob29kaWV8ZW58MHx8MHx8fDA%3D" alt="Graphic Hoodie">
+                    <button class="wishlist-btn" onclick="toggleWishlist(20)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3>Graphic Print Hoodie</h3>
+                <p>$64.99</p>
+                <div class="sizes">
+                    <button class="size-btn">S</button>
+                    <button class="size-btn">M</button>
+                    <button class="size-btn">L</button>
+                    <button class="size-btn">XL</button>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart(20)">Add to Cart</button>
+            </div>
+
+            <!-- Hoodie 5 -->
+            <div class="product-card" data-id="21">
+                <div class="product-image">
+                    <img src="https://plus.unsplash.com/premium_photo-1673827311290-d435f481152e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGhvb2RpZXxlbnwwfHwwfHx8MA%3D%3D" alt="Premium Hoodie">
+                    <button class="wishlist-btn" onclick="toggleWishlist(21)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3>Premium Blend Hoodie</h3>
+                <p>$52.99</p>
+                <div class="sizes">
+                    <button class="size-btn">S</button>
+                    <button class="size-btn">M</button>
+                    <button class="size-btn">L</button>
+                    <button class="size-btn">XL</button>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart(21)">Add to Cart</button>
+            </div>
+
+            <!-- Hoodie 6 -->
+            <div class="product-card" data-id="22">
+                <div class="product-image">
+                    <img src="https://plus.unsplash.com/premium_photo-1674718916953-d6431979f5ef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fFdpbnRlciUyMEZsZWVjZSUyMEhvb2RpZSUyMG1lbnxlbnwwfHwwfHx8MA%3D%3D" alt="Winter Hoodie">
+                    <button class="wishlist-btn" onclick="toggleWishlist(22)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3>Winter Fleece Hoodie</h3>
+                <p>$49.99</p>
+                <div class="sizes">
+                    <button class="size-btn">S</button>
+                    <button class="size-btn">M</button>
+                    <button class="size-btn">L</button>
+                    <button class="size-btn">XL</button>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart(22)">Add to Cart</button>
+            </div>
+
+            <!-- Hoodie 7 -->
+            <div class="product-card" data-id="23">
+                <div class="product-image">
+                    <img src="https://img.freepik.com/free-photo/close-up-portrait-happy-young-man-green_155003-5571.jpg?ga=GA1.1.1862102380.1729219632&semt=ais_hybrid" alt="Sport Hoodie">
+                    <button class="wishlist-btn" onclick="toggleWishlist(23)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3>Athletic Sport Hoodie</h3>
+                <p>$69.99</p>
+                <div class="sizes">
+                    <button class="size-btn">S</button>
+                    <button class="size-btn">M</button>
+                    <button class="size-btn">L</button>
+                    <button class="size-btn">XL</button>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart(23)">Add to Cart</button>
+            </div>
+
+            <!-- Hoodie 8 -->
+            <div class="product-card" data-id="24">
+                <div class="product-image">
+                    <img src="https://img.freepik.com/free-photo/portrait-young-man-yellow-scene_23-2148184819.jpg?ga=GA1.1.1862102380.1729219632&semt=ais_hybrid" alt="Designer Hoodie">
+                    <button class="wishlist-btn" onclick="toggleWishlist(24)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3>Designer Collection Hoodie</h3>
+                <p>$57.99</p>
+                <div class="sizes">
+                    <button class="size-btn">S</button>
+                    <button class="size-btn">M</button>
+                    <button class="size-btn">L</button>
+                    <button class="size-btn">XL</button>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart(24)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="navigation-buttons">
+            <button class="back-home-btn" onclick="window.location.href='index.html'">Back to Home</button>
+        </div>
+    </main>
+
+    <!-- Wishlist Sidebar -->
+    <div class="wishlist-sidebar" id="wishlistSidebar">
+        <h2>My Wishlist
+            <button class="close-wishlist">×</button>
+        </h2>
+        <div class="wishlist-items">
+            <!-- Wishlist items will be added here -->
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <h2>Shopping Cart
+            <button class="close-cart">×</button>
+        </h2>
+        <div class="cart-items">
+            <!-- Cart items will be added here -->
+        </div>
+        <div class="cart-total">
+            <p>Total: $<span id="cartTotal">0</span></p>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Moleculor</h3>
+                <ul>
+                    <li><a href="who-we-are.html">Who We Are</a></li>
+                    <li><a href="t&c.html">Terms & Conditions</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="orders.html">Track Your Order</a></li>
+                    <li><a href="orders.html">Returns</a></li>
+                    <li><a href="orders.html">Shipping Info</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Shop By</h3>
+                <ul>
+                    <li><a href="hoodies.html">Hoodies</a></li>
+                    <li><a href="casual-shirts.html">Shirts</a></li>
+                    <li><a href="tshirts.html">T-Shirts</a></li>
+                    <li><a href="jackets.html">Jackets</a></li>
+                    <li><a href="jeans.html">Jeans</a></li>
+                    <li><a href="trousers.html">Trousers</a></li>
+                    <li><a href="shorts.html">Shorts</a></li>
+                </ul>
+            </div>
+            <div class="footer-column social-links">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://x.com/"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Moleculor. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 

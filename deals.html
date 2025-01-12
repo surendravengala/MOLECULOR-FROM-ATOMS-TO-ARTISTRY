@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deals of the Day - Moleculor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="slider-container">
+            <div class="slider-text">Welcome to Moleculor</div>
+            <div class="slider-text">Get up to 50% off on premium products</div>
+            <div class="slider-text">Get free delivery on first 3 orders</div>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="sticky-header">
+        <div class="header-left">
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">
+                <a href="index.html" ><img src="mol_logo.jpeg" alt="Moleculor Logo"></a>
+            </div>
+        </div>
+
+        <div class="header-right">
+            <div class="search-container">
+                <input type="text" placeholder="Search products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="header-icons">
+                <div class="icon-container">
+                    <a href="login.html"><i class="fas fa-user"></i></a>
+                </div>
+                <div class="icon-container">
+                    <i class="fas fa-heart"></i>
+                    <span class="notification-badge wishlist-count">0</span>
+                </div>
+                <div class="icon-container">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="notification-badge cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar Menu -->
+    <nav class="sidebar" id="sidebar">
+        <button class="close-sidebar">×</button>
+        <div class="sidebar-content">
+            <div class="menu-item">
+                <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+            </div>
+            <div class="menu-item">
+                <a href="new-drops.html">New Arrivals</a>
+            </div>
+            <div class="menu-item">
+                <a href="deals.html">Deals of the Day</a>
+            </div>
+            <div class="menu-item">
+                <a href="orders.html" >My Orders</a>
+            </div>
+            <div class="menu-item">
+                <a href="https://maps.app.goo.gl/Qp2wMaGf9QhUiznz7">Find a Store</a>
+            </div>
+            <div class="menu-item has-submenu">
+                <a>Shop</a>
+                <div class="submenu">
+                    <div class="submenu-section">
+                        <h4>Top Wear</h4>
+                        <a href="hoodies.html">Hoodies</a>
+                        <a href="tshirts.html">T-Shirts</a>
+                        <a href="casual-shirts.html">Shirts</a>
+                        <a href="sweatshirts.html">Sweatshirts</a>
+                    </div>
+                    <div class="submenu-section">
+                        <h4>Bottom Wear</h4>
+                        <a href="trousers.html">Trousers</a>
+                        <a href="jeans.html">Jeans</a>
+                        <a href="shorts.html">Shorts</a>
+                    </div>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Main Content -->
+    <main>
+        <h1 class="section-title">Deals of the Day</h1>
+        <div class="products-grid">
+            <!-- First 4 products from index.html -->
+            <!-- Deal Product 1 -->
+            <div class="product-card deal-card" data-id="9">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1543076447-215ad9ba6923" alt="Premium Suit">
+                    <button class="wishlist-btn" onclick="toggleWishlist(9)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <span class="discount-badge">-40%</span>
+                </div>
+                <h3>Premium Suit</h3>
+                <div class="price-container">
+                    <span class="old-price">$99.99</span>
+                    <span class="new-price">$59.99</span>
+                </div>
+                <div class="sizes">
+                    <button class="size-btn">S</button>
+                    <button class="size-btn">M</button>
+                    <button class="size-btn">L</button>
+                    <button class="size-btn">XL</button>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart(9)">Add to Cart</button>
+            </div>
+
+            <!-- Deal Product 2 -->
+            <div class="product-card deal-card" data-id="10">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1594938291221-94f18cbb5660" alt="Designer Blazer">
+                    <button class="wishlist-btn" onclick="toggleWishlist(10)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <span class="discount-badge">-30%</span>
+                </div>
+                <h3>Designer Blazer</h3>
+                <div class="price-container">
+                    <span class="old-price">$89.99</span>
+                    <span class="new-price">$62.99</span>
+                </div>
+                <div class="sizes">
+                    <button class="size-btn">40</button>
+                    <button class="size-btn">41</button>
+                    <button class="size-btn">42</button>
+                    <button class="size-btn">43</button>
+                    <button class="size-btn">44</button>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart(10)">Add to Cart</button>
+            </div>
+
+            <!-- Deal Product 3 -->
+            <div class="product-card deal-card" data-id="11">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1620012253295-c15cc3e65df4" alt="Premium Jacket">
+                    <button class="wishlist-btn" onclick="toggleWishlist(11)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <span class="discount-badge">-25%</span>
+                </div>
+                <h3>Premium Leather Jacket</h3>
+                <div class="price-container">
+                    <span class="old-price">$129.99</span>
+                    <span class="new-price">$97.49</span>
+                </div>
+                <div class="sizes">
+                    <button class="size-btn">One Size</button>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart(11)">Add to Cart</button>
+            </div>
+
+            <!-- Deal Product 4 -->
+            <div class="product-card deal-card" data-id="12">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10" alt="Casual Set">
+                    <button class="wishlist-btn" onclick="toggleWishlist(12)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <span class="discount-badge">-35%</span>
+                </div>
+                <h3>Casual Shirt</h3>
+                <div class="price-container">
+                    <span class="old-price">$199.99</span>
+                    <span class="new-price">$129.99</span>
+                </div>
+                <div class="sizes">
+                    <button class="size-btn">One Size</button>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart(12)">Add to Cart</button>
+            </div>
+
+            <!-- Additional Deal Products -->
+            <!-- Deal Product 5 -->
+            <div class="product-card deal-card" data-id="13">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22" alt="Denim Collection">
+                    <button class="wishlist-btn" onclick="toggleWishlist(13)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <span class="discount-badge">-45%</span>
+                </div>
+                <h3>Denim Collection</h3>
+                <div class="price-container">
+                    <span class="old-price">$159.99</span>
+                    <span class="new-price">$87.99</span>
+                </div>
+                <div class="sizes">
+                    <button class="size-btn">One Size</button>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart(13)">Add to Cart</button>
+            </div>
+
+            <!-- Deal Product 6 -->
+            <div class="product-card deal-card" data-id="14">
+                <div class="product-image">
+                    <img src="https://img.freepik.com/free-photo/portrait-cheerful-man-white-shirt-standing_171337-12073.jpg?ga=GA1.1.1862102380.1729219632&semt=ais_hybrid" alt="Formal Shirt">
+                    <button class="wishlist-btn" onclick="toggleWishlist(14)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <span class="discount-badge">-20%</span>
+                </div>
+                <h3>Formal Shirt</h3>
+                <div class="price-container">
+                    <span class="old-price">$49.99</span>
+                    <span class="new-price">$39.99</span>
+                </div>
+                <div class="sizes">
+                    <button class="size-btn">One Size</button>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart(14)">Add to Cart</button>
+            </div>
+
+            <!-- Deal Product 7 -->
+            <div class="product-card deal-card" data-id="15">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5" alt="Premium Jacket">
+                    <button class="wishlist-btn" onclick="toggleWishlist(15)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <span class="discount-badge">-50%</span>
+                </div>
+                <h3>Premium Jacket</h3>
+                <div class="price-container">
+                    <span class="old-price">$129.99</span>
+                    <span class="new-price">$64.99</span>
+                </div>
+                <div class="sizes">
+                    <button class="size-btn">40</button>
+                    <button class="size-btn">41</button>
+                    <button class="size-btn">42</button>
+                    <button class="size-btn">43</button>
+                    <button class="size-btn">44</button>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart(15)">Add to Cart</button>
+            </div>
+
+            <!-- Deal Product 8 -->
+            <div class="product-card deal-card" data-id="16">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea" alt="Casual Jacket">
+                    <button class="wishlist-btn" onclick="toggleWishlist(16)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <span class="discount-badge">-35%</span>
+                </div>
+                <h3>Casual Jacket</h3>
+                <div class="price-container">
+                    <span class="old-price">$79.99</span>
+                    <span class="new-price">$51.99</span>
+                </div>
+                <div class="sizes">
+                    <button class="size-btn">One Size</button>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart(16)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="navigation-buttons">
+            <button class="back-home-btn" onclick="window.location.href='index.html'">Back to Home</button>
+        </div>
+    </main>
+
+    <!-- Wishlist Sidebar -->
+    <div class="wishlist-sidebar" id="wishlistSidebar">
+        <h2>My Wishlist
+            <button class="close-wishlist">×</button>
+        </h2>
+        <div class="wishlist-items">
+            <!-- Wishlist items will be added here -->
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <h2>Shopping Cart
+            <button class="close-cart">×</button>
+        </h2>
+        <div class="cart-items">
+            <!-- Cart items will be added here -->
+        </div>
+        <div class="cart-total">
+            <p>Total: $<span id="cartTotal">0</span></p>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Moleculor</h3>
+                <ul>
+                    <li><a href="who-we-are.html">Who We Are</a></li>
+                    <li><a href="t&c.html">Terms & Conditions</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="orders.html">Track Your Order</a></li>
+                    <li><a href="orders.html">Returns</a></li>
+                    <li><a href="orders.html">Shipping Info</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Shop By</h3>
+                <ul>
+                    <li><a href="hoodies.html">Hoodies</a></li>
+                    <li><a href="casual-shirts.html">Shirts</a></li>
+                    <li><a href="tshirts.html">T-Shirts</a></li>
+                    <li><a href="jackets.html">Jackets</a></li>
+                    <li><a href="jeans.html">Jeans</a></li>
+                    <li><a href="trousers.html">Trousers</a></li>
+                    <li><a href="shorts.html">Shorts</a></li>
+                </ul>
+            </div>
+            <div class="footer-column social-links">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://x.com/"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Moleculor. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 

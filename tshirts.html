@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Keep the head section same as hoodies.html -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirts Collection - Moleculor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<!-- Top Bar -->
+<div class="top-bar">
+    <div class="slider-container">
+        <div class="slider-text">Welcome to Moleculor</div>
+        <div class="slider-text">Get up to 50% off on premium products</div>
+        <div class="slider-text">Get free delivery on first 3 orders</div>
+    </div>
+</div>
+
+<!-- Header Section -->
+<header class="sticky-header">
+    <div class="header-left">
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="logo">
+            <a href="index.html" ><img src="mol_logo.jpeg" alt="Moleculor Logo"></a>
+        </div>
+    </div>
+
+    <div class="header-right">
+        <div class="search-container">
+            <input type="text" placeholder="Search products...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="header-icons">
+            <div class="icon-container">
+                <a href="login.html"><i class="fas fa-user"></i></a>
+            </div>
+            <div class="icon-container">
+                <i class="fas fa-heart"></i>
+                <span class="notification-badge wishlist-count">0</span>
+            </div>
+            <div class="icon-container">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="notification-badge cart-count">0</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Sidebar Menu -->
+<nav class="sidebar" id="sidebar">
+    <button class="close-sidebar">×</button>
+    <div class="sidebar-content">
+        <div class="menu-item">
+            <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+        </div>
+        <div class="menu-item">
+            <a href="new-drops.html">New Arrivals</a>
+        </div>
+        <div class="menu-item">
+            <a href="deals.html">Deals of the Day</a>
+        </div>
+        <div class="menu-item">
+            <a href="orders.html" >My Orders</a>
+        </div>
+        <div class="menu-item">
+            <a href="https://maps.app.goo.gl/Qp2wMaGf9QhUiznz7">Find a Store</a>
+        </div>
+        <div class="menu-item has-submenu">
+            <a>Shop</a>
+            <div class="submenu">
+                <div class="submenu-section">
+                    <h4>Top Wear</h4>
+                    <a href="hoodies.html">Hoodies</a>
+                    <a href="tshirts.html">T-Shirts</a>
+                    <a href="casual-shirts.html">Shirts</a>
+                    <a href="sweatshirts.html">Sweatshirts</a>
+                </div>
+                <div class="submenu-section">
+                    <h4>Bottom Wear</h4>
+                    <a href="trousers.html">Trousers</a>
+                    <a href="jeans.html">Jeans</a>
+                    <a href="shorts.html">Shorts</a>
+                </div>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Main Content -->
+    <main>
+        <h1 class="section-title">T-Shirts Collection</h1>
+        <div class="products-grid">
+            <!-- T-Shirt 1 -->
+            <div class="product-card" data-id="33">
+                <div class="product-image">
+                    <img src="https://img.freepik.com/free-photo/front-view-young-man-holding-cello-tape_23-2148273248.jpg?ga=GA1.1.1862102380.1729219632&semt=ais_hybrid" alt="Basic T-Shirt">
+                    <button class="wishlist-btn" onclick="toggleWishlist(33)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3>Basic Cotton T-Shirt</h3>
+                <p>$29.99</p>
+                <div class="sizes">
+                    <button class="size-btn">S</button>
+                    <button class="size-btn">M</button>
+                    <button class="size-btn">L</button>
+                    <button class="size-btn">XL</button>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart(33)">Add to Cart</button>
+            </div>
+
+            <!-- T-Shirt 2 -->
+            <div class="product-card" data-id="34">
+                <div class="product-image">
+                    <img src="https://img.freepik.com/premium-photo/valentines-day-concept_474717-111952.jpg?ga=GA1.1.1862102380.1729219632&semt=ais_hybrid" alt="Graphic T-Shirt">
+                    <button class="wishlist-btn" onclick="toggleWishlist(34)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3>Graphic Print T-Shirt</h3>
+                <p>$24.99</p>
+                <div class="sizes">
+                    <button class="size-btn">S</button>
+                    <button class="size-btn">M</button>
+                    <button class="size-btn">L</button>
+                    <button class="size-btn">XL</button>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart(34)">Add to Cart</button>
+            </div>
+            <!-- T-Shirt 3 -->
+            <div class="product-card" data-id="35">
+                <div class="product-image">
+                    <img src="https://img.freepik.com/free-photo/front-view-smiley-young-man-posing_23-2149745580.jpg?ga=GA1.1.1862102380.1729219632&semt=ais_hybrid" alt="Striped T-Shirt">
+                    <button class="wishlist-btn" onclick="toggleWishlist(35)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3>Striped Cotton T-Shirt</h3>
+                <p>$29.99</p>
+                <div class="sizes">
+                    <button class="size-btn">S</button>
+                    <button class="size-btn">M</button>
+                    <button class="size-btn">L</button>
+                    <button class="size-btn">XL</button>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart(35)">Add to Cart</button>
+            </div>
+            <!-- T-Shirt 4 -->
+            <div class="product-card" data-id="36">
+                <div class="product-image">
+                    <img src="https://img.freepik.com/premium-photo/portrait-young-man-standing-against-gray-background_1048944-18061336.jpg?ga=GA1.1.1862102380.1729219632&semt=ais_hybrid" alt="Polo T-Shirt">
+                    <button class="wishlist-btn" onclick="toggleWishlist(36)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3>Classic Polo T-Shirt</h3>
+                <p>$29.99</p>
+                <div class="sizes">
+                    <button class="size-btn">S</button>
+                    <button class="size-btn">M</button>
+                    <button class="size-btn">L</button>
+                    <button class="size-btn">XL</button>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart(36)">Add to Cart</button>
+            </div>
+            <!-- T-Shirt 5 -->
+            <div class="product-card" data-id="37">
+                <div class="product-image">
+                    <img src="https://img.freepik.com/free-photo/handsome-man_144627-20799.jpg?ga=GA1.1.1862102380.1729219632&semt=ais_hybrid" alt="Henley T-Shirt">
+                    <button class="wishlist-btn" onclick="toggleWishlist(37)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3>Henley Neck T-Shirt</h3>
+                <p>$29.99</p>
+                <div class="sizes">
+                    <button class="size-btn">S</button>
+                    <button class="size-btn">M</button>
+                    <button class="size-btn">L</button>
+                    <button class="size-btn">XL</button>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart(37)">Add to Cart</button>
+            </div>
+            <!-- T-Shirt 6 -->
+            <div class="product-card" data-id="38">
+                <div class="product-image">
+                    <img src="https://img.freepik.com/premium-photo/just-average-joe-cropped-portrait-handsome-young-guy-standing-casually-while-isolated-white_590464-29310.jpg?ga=GA1.1.1862102380.1729219632&semt=ais_hybrid" alt="V-Neck T-Shirt">
+                    <button class="wishlist-btn" onclick="toggleWishlist(38)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3>V-Neck T-Shirt</h3>
+                <p>$29.99</p>
+                <div class="sizes">
+                    <button class="size-btn">S</button>
+                    <button class="size-btn">M</button>
+                    <button class="size-btn">L</button>
+                    <button class="size-btn">XL</button>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart(38)">Add to Cart</button>
+            </div>
+            <!-- T-Shirt 7 -->
+            <div class="product-card" data-id="39">
+                <div class="product-image">
+                    <img src="https://img.freepik.com/premium-photo/portrait-happy-handsome-man-with-casual-clothing-smiling_251136-45709.jpg?ga=GA1.1.1862102380.1729219632&semt=ais_hybrid" alt="Longline T-Shirt">
+                    <button class="wishlist-btn" onclick="toggleWishlist(39)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3>Longline T-Shirt</h3>
+                <p>$29.99</p>
+                <div class="sizes">
+                    <button class="size-btn">S</button>
+                    <button class="size-btn">M</button>
+                    <button class="size-btn">L</button>
+                    <button class="size-btn">XL</button>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart(39)">Add to Cart</button>
+            </div>
+            <!-- T-Shirt 8 -->
+            <div class="product-card" data-id="40">
+                <div class="product-image">
+                    <img src="https://img.freepik.com/free-photo/portrait-handsome-confident-stylish-hipster-lambersexual-model-with-curly-hairstyle-sexy-man-dressed-jeans-white-tshirt-fashion-male-isolated-blue-wall-studio_158538-26574.jpg?ga=GA1.1.1862102380.1729219632&semt=ais_hybrid" alt="Premium T-Shirt">
+                    <button class="wishlist-btn" onclick="toggleWishlist(40)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <h3>Premium Cotton T-Shirt</h3>
+                <p>$29.99</p>
+                <div class="sizes">
+                    <button class="size-btn">S</button>
+                    <button class="size-btn">M</button>
+                    <button class="size-btn">L</button>
+                    <button class="size-btn">XL</button>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart(40)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="navigation-buttons">
+            <button class="back-home-btn" onclick="window.location.href='index.html'">Back to Home</button>
+        </div>
+    </main>
+
+    <!-- Keep the wishlist and cart sidebars same as hoodies.html -->
+     <!-- Wishlist Sidebar -->
+<div class="wishlist-sidebar" id="wishlistSidebar">
+    <h2>My Wishlist
+        <button class="close-wishlist">×</button>
+    </h2>
+    <div class="wishlist-items">
+        <!-- Wishlist items will be added here -->
+    </div>
+</div>
+
+<!-- Cart Sidebar -->
+<div class="cart-sidebar" id="cartSidebar">
+    <h2>Shopping Cart
+        <button class="close-cart">×</button>
+    </h2>
+    <div class="cart-items">
+        <!-- Cart items will be added here -->
+    </div>
+    <div class="cart-total">
+        <p>Total: $<span id="cartTotal">0</span></p>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Moleculor</h3>
+                <ul>
+                    <li><a href="who-we-are.html">Who We Are</a></li>
+                    <li><a href="t&c.html">Terms & Conditions</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="orders.html">Track Your Order</a></li>
+                    <li><a href="orders.html">Returns</a></li>
+                    <li><a href="orders.html">Shipping Info</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Shop By</h3>
+                <ul>
+                    <li><a href="hoodies.html">Hoodies</a></li>
+                    <li><a href="casual-shirts.html">Shirts</a></li>
+                    <li><a href="tshirts.html">T-Shirts</a></li>
+                    <li><a href="jackets.html">Jackets</a></li>
+                    <li><a href="jeans.html">Jeans</a></li>
+                    <li><a href="trousers.html">Trousers</a></li>
+                    <li><a href="shorts.html">Shorts</a></li>
+                </ul>
+            </div>
+            <div class="footer-column social-links">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://x.com/"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Moleculor. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
